@@ -5,7 +5,11 @@ public abstract class Pessoa {
     private String nome;
     private String cpf;
 
-    public abstract String comprimentar();
+    public abstract String cumprimentar();
+
+    public String cumprimentar(Pessoa qualquerPessoa){
+        return String.format("Olá, %s", qualquerPessoa.getNome());
+    }
 
     public String getNome() {
         return nome;

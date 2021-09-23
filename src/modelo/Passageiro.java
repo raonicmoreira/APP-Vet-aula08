@@ -15,7 +15,7 @@ public class Passageiro extends Pessoa{
     }
 
     @Override
-    public String comprimentar() {
+    public String cumprimentar() {
         
         return "Olá Motorista!";
     }

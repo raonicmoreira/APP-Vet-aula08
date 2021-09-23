@@ -21,7 +21,14 @@ public class Motorista extends Pessoa{
     }
 
     @Override
-    public String comprimentar() {
+    public String cumprimentar() {
         return "Olá, Passageiro";
+    }
+
+    @Override
+    public String cumprimentar(Pessoa qualquerPessoa){
+        String original = super.cumprimentar(qualquerPessoa);
+        String complemento = " Meu nome é %s e serei o seu motorista nesta viagem.";
+        return String.format(original + complemento, getNome());
     }
 }
